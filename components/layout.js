@@ -25,20 +25,20 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <section className={styles.links}>
-            <a className={styles.link} href="/resume.pdf">Resume</a>
-            <a className={styles.link} href="https://github.com/davidlwg">Github</a>
-            <a className={styles.link} href="https://www.linkedin.com/in/davidwangg/">LinkedIn</a>   
-            <a href="mailto: david2000wang@gmail.com">Email</a>
+            <a className={styles.link} href="/resume.pdf" target="_blank">Resume</a>
+            <a className={styles.link} href="https://github.com/davidlwg" target="_blank">Github</a>
+            <a className={styles.link} href="https://www.linkedin.com/in/davidwangg/" target="_blank">LinkedIn</a>
+            <a href="mailto: david2000wang@gmail.com" target="_blank">Email</a>
       </section>
       <header className={styles.header}>
         {home ? (
           <>
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+          <h1 className={`${utilStyles.heading2Xl}`}><mark>{name}</mark></h1>
           </>
         ) : (
           <>
             <Link href="/">
-              <h1 className={utilStyles.heading2Xl} style={{cursor: 'pointer'}}>{name}</h1>
+                <h1 className={utilStyles.heading2Xl} style={{cursor: 'pointer'}}>{name}</h1>
             </Link>
           </>
         )}

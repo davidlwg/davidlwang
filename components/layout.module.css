@@ -15,10 +15,20 @@
 }
 
 .link {
-    padding-right: 1rem;
+    margin-right: 1rem;
+    transition: all .2s ease;
 }
 
 .backToHome {
     margin: 3rem 0 0;
+}
+
+/* gradient source: https://uigradients.com/#Wiretap */
+/* decreased transparency to 80% */
+.highlight {
+    background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc);
+    border-radius: 6px;
+    padding: 3px 6px;
+/*    color: white;*/
 }
   

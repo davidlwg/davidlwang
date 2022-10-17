@@ -12,12 +12,12 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>I'm a forward deployed SWE intern at <a href="https://perpetua.io/" target="_blank">Perpetua</a>.</p>
-        <p>I am also a student studying a double major in Computer Science at the <a href="https://uwaterloo.ca/future-students/programs/computer-science" target="_blank">University of Waterloo</a> and Business Administration at <a href="https://www.wlu.ca/programs/business-and-economics/undergraduate/business-administration-bba/index.html" target="_blank">Wilfrid Laurier University</a>.</p>
-        <p> Previously, I did internships as a research analyst at <a href="https://www.theblock.co/" target="_blank">The Block Crypto</a> and a SWE at a unicorn called <a href="https://www.ada.cx/" target="_blank">Ada</a>.</p>
+          <p>I'm currently a forward deployed SWE intern at <a href="https://perpetua.io/" target="_blank">Perpetua</a>.</p>
+          <p>I am also studying in a <a href="https://uwaterloo.ca/future-students/programs/business-administration-computer-science-double-degree" target="_blank">double degree</a> program in Computer Science at the University of Waterloo and Business Administration at Wilfrid Laurier University.</p>
+          <p> Previously, I did internships as a research analyst at <a href="https://www.theblock.co/" target="_blank">The Block Crypto</a> and a SWE at a unicorn called <a href="https://www.ada.cx/" target="_blank">Ada</a>.</p>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Projects</h2>
+      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}><mark>Projects</mark></h2>
         <ul className={utilStyles.list}>
           <li className={utilStyles.listItem}>Project
             <br />
@@ -28,7 +28,7 @@ export default function Home({ allPostsData }) {
         </ul>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}><mark>Blog</mark></h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -42,7 +42,7 @@ export default function Home({ allPostsData }) {
           </li>
           ))}
         </ul>
-      </section>
+      </section> */}
     </Layout>
   )
 }
