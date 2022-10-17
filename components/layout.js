@@ -25,10 +25,10 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <section className={styles.links}>
-            <a className={styles.link} href="/resume.pdf" target="_blank">Resume</a>
-            <a className={styles.link} href="https://github.com/davidlwg" target="_blank">Github</a>
-            <a className={styles.link} href="https://www.linkedin.com/in/davidwangg/" target="_blank">LinkedIn</a>
-            <a href="mailto: david2000wang@gmail.com" target="_blank">Email</a>
+          <a className={styles.link} href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+          <a className={styles.link} href="https://github.com/davidlwg" target="_blank" rel="noreferrer">Github</a>
+          <a className={styles.link} href="https://www.linkedin.com/in/davidwangg/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto: david2000wang@gmail.com" target="_blank" rel="noreferrer">Email</a>
       </section>
       <header className={styles.header}>
         {home ? (
